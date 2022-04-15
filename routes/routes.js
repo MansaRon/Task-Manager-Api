@@ -58,6 +58,12 @@ router.patch('/lists/:id', async (req, res) => {
 })
 
 router.delete('/lists/:id', async (req, res) => {
-    
+    try {
+        TaskModel.findOneAndRemove({ _id: req.params.id}).then((removedTask) => { res.send(removedTask) });
+    } catch (error) {
+        if (res.status(401)) { res.status(401).json({message: error.message}) } else 
+        if (res.status(403)) { res.status(403).json({message: error.message}) } else 
+        if (res.status(405)) { res.status(405).json({message: error.message}) }
+    }
 })
 
