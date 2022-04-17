@@ -3,12 +3,29 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const router = require('./routes/routes');
 const app = express();
+const cors = require('cors')
 
 app.use(express.json());
 app.use(router);
 
+// CORS
+app.use(cors())
+
 // Load middleware
 app.use(bodyParser.json());
+
+app.use(function (req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+    res.header('Access-Control-Allow-Credentials', true);
+    if (req.method === 'OPTIONS') {
+        res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+        res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH');
+        return res.status(200).json({});
+    };
+    next();
+    console.log('Inside CORS...')
+});
 
 // Test Route
 // app.get('/', (res, req) => {
@@ -20,6 +37,6 @@ const mongoString = 'mongodb+srv://MansaRon:TheGreat%4095@thendocluster.1gxlw.mo
 mongoose.connect(mongoString);
 const db = mongoose.connection;
 
-db.on('error', (error) => {console.log(error)})
-db.once('connected', () => {console.log('Database Connected')})
-app.listen(3500, () => {console.log('Server is listening and alive')})
+db.on('error', (error) => { console.log(error) })
+db.once('connected', () => { console.log('Database Connected') })
+app.listen(3500, () => { console.log('Server is listening and alive') })
