@@ -9,22 +9,27 @@ app.use(express.json());
 app.use(router);
 
 // CORS
-app.use(cors())
+const corsOptions ={
+    origin:'http://localhost:3500', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200
+}
+app.use(cors(corsOptions));
 
 // Load middleware
 app.use(bodyParser.json());
 
 app.use(function (req, res, next) {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-    res.header('Access-Control-Allow-Credentials', true);
-    if (req.method === 'OPTIONS') {
-        res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-        res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH');
-        return res.status(200).json({});
-    };
+    // res.header('Access-Control-Allow-Origin', '*');
+    // res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+    // res.header('Access-Control-Allow-Credentials', true);
+    // if (req.method === 'OPTIONS') {
+    //     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+    //     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH');
+    //     return res.status(200).json({});
+    // };
+    console.log('Inside CORS...');
     next();
-    console.log('Inside CORS...')
 });
 
 // Test Route

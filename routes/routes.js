@@ -25,7 +25,8 @@ app.use(function (req, res, next) {
 // Lists API
 router.get('/all-lists', async (req, res, next) => {
     try {
-        const data = await ListModel.find(); res.json(data);
+        const data = await ListModel.find(); 
+        return res.json(data);
     }
     catch (error) {
         if (res.status(400)) { res.status(400).json({message: error.message}) } else
@@ -34,7 +35,7 @@ router.get('/all-lists', async (req, res, next) => {
         if (res.status(405)) { res.status(405).json({message: error.message}) } else 
         if (res.status(500)) { res.status(500).json({message: error.message}) }
     }
-    next();
+    //next();
 })
 
 router.post('/lists', async (req, res, next) => {
