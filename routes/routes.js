@@ -80,9 +80,9 @@ router.delete('/lists/:id', async (req, res) => {
 // Lists API
 
 // Getting tasks under specific list
-router.get('/lists/:listId/tasks', async (req, res) => {
+router.get('/all-lists/:listId/tasks', async (req, res) => {
     try {
-        const taskData = await TaskModel.find(); res.json(taskData);
+        const taskData = await TaskModel.find({ _listId: req.params.listId }); res.json(taskData);
     }
     catch (error) {
         if (res.status(400)) { res.status(400).json({message: error.message}) } else
@@ -93,7 +93,7 @@ router.get('/lists/:listId/tasks', async (req, res) => {
     }
 })
 
-router.get('/lists/:listId/tasks/:taskId', async (req, res) => {
+router.get('/lists/:listId/tasks', async (req, res) => {
     try {
         const taskData = await TaskModel.findOne({ _id: req.params.taskId, _listId: req.params.listId }); res.json(taskData);
     }
