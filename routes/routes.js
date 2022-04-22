@@ -120,7 +120,7 @@ router.post('/lists/:listId/tasks', async (req, res) => {
     }
 })
 
-router.patch('/lists/:listId/tasks/:taskId', async (req, res) => {
+router.put('/lists/:listId/tasks/:taskId', async (req, res) => {
     try {
         await TaskModel.findOneAndUpdate({ _id: req.params.taskId, _listId: req.params.listId }, { $set: req.body }).then(() => { res.sendStatus(200) });
     } catch (error) {
