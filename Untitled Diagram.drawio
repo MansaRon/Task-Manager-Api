@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-17T21:48:23.184Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="jRTAQW5t340mJVpEZZFF" version="21.3.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-17T22:09:04.359Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="77uOAZVKydPiQd2RA6Kf" version="21.3.8" type="github">
   <diagram name="Page-1" id="10JMsJAdgL6Ty_nKgWxM">
-    <mxGraphModel dx="2393" dy="1767" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2712" dy="1960" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -250,6 +250,60 @@
             <mxPoint x="1850" y="-490" as="targetPoint" />
             <Array as="points">
               <mxPoint x="2180" y="-560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-56" value="&lt;div&gt;Add another booking or checkout and pay?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="3500" y="-505" width="210" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-57" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3310" y="-419.97999999999996" as="sourcePoint" />
+            <mxPoint x="3490" y="-420.71" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-58" value="&lt;div&gt;Create &lt;br&gt;&lt;/div&gt;&lt;div&gt;another&lt;/div&gt;&lt;div&gt;booking&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="3550" y="-740" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-59" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3604.29" y="-509.97999999999996" as="sourcePoint" />
+            <mxPoint x="3604.29" y="-620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-60" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;fontSize=12;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3540" y="-690" as="sourcePoint" />
+            <mxPoint x="870" y="-490" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2870" y="-690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-61" value="Select Payment" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="3920" y="-480" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-62" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3730" y="-419.93999999999994" as="sourcePoint" />
+            <mxPoint x="3910" y="-420.66999999999996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-63" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3570" y="-335" as="sourcePoint" />
+            <mxPoint x="3570" y="-215.73" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-64" value="&lt;div&gt;Get ETA&lt;/div&gt;&lt;div&gt;for booking&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="3550" y="-200" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-65" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3640" y="-210" as="sourcePoint" />
+            <mxPoint x="3640" y="-330" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3640" y="-260" />
             </Array>
           </mxGeometry>
         </mxCell>
