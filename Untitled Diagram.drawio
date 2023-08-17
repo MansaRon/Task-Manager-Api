@@ -1,19 +1,19 @@
-<mxfile host="app.diagrams.net" modified="2023-08-17T15:13:00.384Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="XqBr9qM0wljWisIzgYTE" version="21.3.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-17T15:39:30.831Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="mShNe5TM6oRWy-E8Nf7n" version="21.3.8" type="github">
   <diagram name="Page-1" id="10JMsJAdgL6Ty_nKgWxM">
     <mxGraphModel dx="1594" dy="1312" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="BaiIBuBZKfCoYxozeQKi-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="-760" y="-480" width="30" height="60" as="geometry" />
+          <mxGeometry x="-770" y="-460" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="BaiIBuBZKfCoYxozeQKi-3" value="Registration" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="-590" y="-480" width="110" height="110" as="geometry" />
         </mxCell>
         <mxCell id="BaiIBuBZKfCoYxozeQKi-4" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-720" y="-440.5" as="sourcePoint" />
-            <mxPoint x="-600" y="-440" as="targetPoint" />
+            <mxPoint x="-720" y="-430.5" as="sourcePoint" />
+            <mxPoint x="-600" y="-430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="BaiIBuBZKfCoYxozeQKi-5" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="BaiIBuBZKfCoYxozeQKi-3" target="BaiIBuBZKfCoYxozeQKi-3">
@@ -21,20 +21,71 @@
         </mxCell>
         <mxCell id="BaiIBuBZKfCoYxozeQKi-6" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-470" y="-440" as="sourcePoint" />
-            <mxPoint x="-350" y="-439.5" as="targetPoint" />
+            <mxPoint x="-470" y="-430.5" as="sourcePoint" />
+            <mxPoint x="-350" y="-430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BaiIBuBZKfCoYxozeQKi-7" value="Enter registration details" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;align=center;fontStyle=0" vertex="1" parent="1">
-          <mxGeometry x="-340" y="-480" width="140" height="110" as="geometry" />
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-7" value="&lt;div&gt;Valid&amp;nbsp;&lt;/div&gt;&lt;div&gt;registration&amp;nbsp;&lt;/div&gt;&lt;div&gt;details?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;align=center;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="-340" y="-480" width="140" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="BaiIBuBZKfCoYxozeQKi-8" value="Enter OTP" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=13;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-8" value="Enter OTP/Valid mobile number" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=13;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="-120" y="-480" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="BaiIBuBZKfCoYxozeQKi-9" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-190" y="-430" as="sourcePoint" />
             <mxPoint x="-130" y="-430.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-10" value="Valid OTP?" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="-480" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-12" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-10" y="-430" as="sourcePoint" />
+            <mxPoint x="70" y="-430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-15" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;fontSize=12;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="-370" as="sourcePoint" />
+            <mxPoint x="-80" y="-370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="30" y="-320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-17" value="User registered already?" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="-600" y="-250" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-18" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-535.5" y="-360" as="sourcePoint" />
+            <mxPoint x="-535.5" y="-260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-19" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;fontSize=12;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-460" y="-190" as="sourcePoint" />
+            <mxPoint x="380" y="-350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint y="-190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-20" value="&lt;div&gt;Login&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="320" y="-480" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-21" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="-430" as="sourcePoint" />
+            <mxPoint x="310" y="-430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaiIBuBZKfCoYxozeQKi-22" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="-430.5" as="sourcePoint" />
+            <mxPoint x="550" y="-430.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
